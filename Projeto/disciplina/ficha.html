@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>InfoAlunos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/imagens/logotipos_UMa_png-05.png" alt="uni logo" class="logo">
+            <h1>InfoAlunos - Serviço de Informação dos Alunos - Projeto</h1>
+            <img src="/imagens/images.png" alt="user photo" class="user_photo">       
+        </header>
+
+        <div class="navbar">
+            <div class="dropdown">
+                <a href="/inicio.html">
+                <button class="navbtn">Inicio</button>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Geral</button>
+                <div class="dropdown-content">
+                    <a href="/geral/processos.html">Processos</a>
+                    <a href="/geral/dadospessoais.html">Dados Pessoais</a>
+                    <a href="/geral/privacidade.html">Privacidade</a>
+                    <a href="/geral/ajuda.html">Ajuda</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Serviços</button>
+                <div class="dropdown-content">
+                    <a href="/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/servicos/matri_inscr.html">Matrículas/Inscrições</a>
+                    <a href="/servicos/inscr_turm.html">Inscrição em Turmas</a>
+                    <a href="/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/servicos/cartaouniv.html">Cartão Universitário</a>
+                    <a href="https://www.uma.pt/sobre/servico-apoio-estudantes/accao-social/?IDM=PT&ID0=1764771123&ID1=&ID2=0&ID3=709dbeeb9dd8aa0725256b8213d7542c&TPESQ=FRM_CONCURSOS_SUBMETERCANDIDATURA_EAGRFILTRA" target="_blank">SASUMa-Bolsas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Concursos</button>
+                <div class="dropdown-content">
+                    <a href="/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Avaliação</button>
+                <div class="dropdown-content">
+                    <a href="/avaliacao/pautas.html">Pautas</a>
+                    <a href="/avaliacao/recla_notas.html">Reclamação de Nota</a>
+                    <a href="/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/avaliacao/resul_inque.html">Resultados de Inquéritos</a>
+                    <a href="/avaliacao/inque_raides.html">Inquérito RAIDES</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Creditações</button>
+                <div class="dropdown-content">
+                    <a href="/creditacoes/listaprocessos.html">Lista de Processos</a>
+                    <a href="/creditacoes/novoprocesso.html">Novo Processo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Documentos</button>
+                <div class="dropdown-content">
+                    <a href="/documentos/academicos.html">Académicos</a>
+                    <a href="/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Aula</button>
+                <div class="dropdown-content">
+                    <a href="/aula/calendario.html">Calendário</a>
+                    <a href="/aula/sumarios.html">Sumários</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Disciplina</button>
+                <div class="dropdown-content">
+                    <a href="/disciplina/ficha.html">Ficha</a>
+                    <a href="/disciplina/programa.html">Programa</a>
+                    <a href="/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Curso</button>
+                <div class="dropdown-content">
+                    <a href="/curso/fichacurricular.html">Ficha Curricular</a>
+                    <a href="/curso/horarios.html">Horários</a>
+                    <a href="/curso/histo_matric_inscr.html">Histórico de Matrículas/Inscrições</a>
+                    <a href="/curso/histo_disc_apro.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/curso/trans_bolo.html">Transição para Bolonha</a>
+                    <a href="/curso/plan_concl.html">Plano de Conclusão</a>
+                    <a href="/curso/quadro_presc.html">Quadro de Prescrição</a>
+                    <a href="/curso/ativ_acad_aluno.html">Atividades Académicas do Aluno</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Instituição</button>
+                <div class="dropdown-content">
+                    <a href="/instituicao/estr_orga.html">Estrutura Orgânica</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/eleicoes/eleicoes.html">
+                <button class="navbtn">Eleições</button>
+                </a>
+            </div>
+        </div>
+
+        <main class="main-inquerito-raides">
+            <div style="background-color: white; padding: 10px;">
+                <p><b>Pesquisa de Disciplinas</b></p>
+                <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Ano Lectivo</label>
+                            <select id="ano" style="width: 600px;">
+                                <option></option>
+                                <option>2023/24</option>
+                                <option>2024/25</option>
+                                <option selected>2025/26</option>
+                                <option>2026/27</option>
+                                <option>2028/29</option>
+                            </select>
+                        </div>
+                        <button style="width: 150px;">Pesquisar...</button>
+                </div>
+                <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Disciplina</label>
+                            <select id="ano" style="width: 783px;">
+                                <option></option>
+                                <option selected>Matemática_CTeSP_TPSI [S1]</option>
+                                <option>Introdução à Programação_CTeSP_TPSI [S1]</option>
+                                <option>Design Hipermédia_CTeSP_TPSI [S1]</option>
+                                <option>Sistemas Operativos e Redes_CTeSP_TPSI [S1]</option>
+                                <option>Técnicas de Expressão do Português_CTeSP_TPSI [S1]</option>
+                            </select>
+                        </div>
+                </div>
+                
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Lista de Disciplinas</b></p>
+                <table class="ficha">
+                    <thead>
+                        <tr>
+                            <th>AL</th>
+                            <th>Course</th>
+                            <th>Curso</th>
+                            <th>Especialidade</th>
+                            <th>ALP</th>
+                            <th>S</th>
+                            <th>UC</th>
+                            <th>CH</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025/26</td>
+                            <td>Matemática</td>
+                            <td>Tec Pro Sis Inf</td>
+                            <td>S/Ramos - Esp</td>
+                            <td>2020/21</td>
+                            <td>S1</td>
+                            <td>5.50</td>
+                            <td>140.00</td>
+                        </tr>
+                        
+                        
+                    </tbody>
+                </table>
+
+                <p>AL -Ano Lectivo | ALP - Ano Lectivo do Plano | S - Semestre | UC - Unidades de Crédito | CH - Carga Horária</p>
+                
+                    
+                
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <div class="grid">
+                <details class="aba" name="tabs" open>
+                    <summary class="obo" data-tab-order="1">Objetivos / Avaliação</summary>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px;">
+                        <div style="grid-column: 1/ 2;">
+                            <p><b>Objectivos da Disciplina</b></p>
+                            <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                            </div>
+                            <p style="margin-top: 20px;"><b>Critérios de avaliação:</b></p>
+                            <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                            </div>
+                            <div style="display: flex; margin-top: 20px; gap: 10px;">
+                                <div class="campo">
+                                    <label for="ano">Relatório a imprimir</label>
+                                    <select id="ano" style="width: 100%;">
+                                        <option></option>
+                                        <option selected>Ficha(s) de Disciplina(s)</option>
+                                    </select>
+                                </div>
+                                <button style="width: 60px;">Imprimir</button>
+
+
+                            </div>
+
+                        </div>
+                        <div style="grid-column: 2 /3;">
+                            <p><b>Tradução em Inglês dos Objecivos:</b></p>
+                            <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                            </div>
+                            <p style="margin-top: 20px;"><b>Tradução para Inglês dos Critérios de avaliação:</b></p>
+                            <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                            </div>
+
+                        </div>
+                        
+                           
+                    </div>
+                </details>
+                <details class="aba" name="tabs">
+                    <summary class="obo" data-tab-order="2">Bibliografia</summary>
+                    <div>
+                        <p style="margin-top: 20px; margin-bottom: 10px;"><b>Bibliografia Principal:</b></p>
+                        <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+                        
+                        </div>
+                        <p style="margin-top: 20px; margin-bottom: 10px;"><b>Outras Fontes Bibliográficas/Documentos de Apoio:</b></p>
+                        <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+                        
+                        </div>
+                        <div style="display: flex; margin-top: 20px; gap: 10px;">
+                            <div class="campo">
+                                <label for="ano">Relatório a imprimir</label>
+                                <select id="ano" style="width: 100%;">
+                                    <option></option>
+                                    <option selected>Ficha(s) de Disciplina(s)</option>
+                                </select>
+                            </div>
+                            <button style="width: 60px;">Imprimir</button>
+                        </div>
+                    </div>
+                       
+                </details>
+                <details class="aba" name="tabs">
+                    <summary class="obo" data-tab-order="3">Programa</summary>
+                    <div>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px;">
+                            <div style="grid-column: 1/ 2;">
+                                <p><b>Programa resumido:</b></p>
+                                <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                                </div>
+                            </div>
+                            <div style="grid-column: 2 /3;">
+                                <p><b>Tradução para Inglês do Programa resumido:</b></p>
+                                <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                                </div>
+
+                            </div>
+                              
+                        </div>
+                        <div style="display: flex; justify-content: center; margin: 20px;">
+                            <p><b>Programa Detalhado</b></p>
+                        </div>
+                        <div style="display: flex; margin-top: 20px; gap: 10px;">
+                            <div class="campo">
+                                <label for="ano">Escolha o Tipo de Programa</label>
+                                <select id="ano" style="width: 100%;">
+                                    <option></option>
+                                    <option selected>Programa de Ensino teórico-prático (vazio)</option>
+                                    <option>Programa (23 items)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <table class="ficha1" style="margin-top: 20px;">
+                            <thead>
+                                <tr>
+                                    <th>Item (ex:1, 1.2,...)</th>
+                                    <th>Tópico</th>
+                                    <th>Tradução para Inglês do Tópico de Programa</th>
+                                    <th>Horas de Contacto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                
+                                
+                            </tbody>
+                        </table>
+
+                        <div style="display: flex; margin-top: 20px; gap: 10px;">
+                            <div class="campo">
+                                <label for="ano">Relatório a imprimir</label>
+                                <select id="ano" style="width: 100%;">
+                                    <option></option>
+                                    <option selected>Ficha(s) de Disciplina(s)</option>
+                                </select>
+                            </div>
+                            <button style="width: 60px;">Imprimir</button>
+
+
+                        </div>
+                    </div>
+                </details>
+                <details class="aba" name="tabs">
+                    <summary class="obo" data-tab-order="4">Outros Dados</summary>
+                     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px;">
+                        <p style="margin-top: 20px; margin-bottom: 20px;"><b>Página Web (ex: http://www.uma.pt/)</b></p>
+                        <div style="grid-column: 1/ 2;">
+                            <p><b>Atendimento:</b></p>
+                            <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                            </div>
+                            <p style="margin-top: 20px;"><b>Observaçoes:</b></p>
+                            <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                            </div>
+                            <div style="display: flex; margin-top: 20px; gap: 10px;">
+                                <div class="campo">
+                                    <label for="ano">Relatório a imprimir</label>
+                                    <select id="ano" style="width: 100%;">
+                                        <option></option>
+                                        <option selected>Ficha(s) de Disciplina(s)</option>
+                                    </select>
+                                </div>
+                                <button style="width: 60px;">Imprimir</button>
+
+
+                            </div>
+
+                        </div>
+                        <div style="grid-column: 2 /3;">
+                            <p><b>Tradução do Atendimento:</b></p>
+                            <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                            </div>
+                            <p style="margin-top: 20px;"><b>Tradução das Observações:</b></p>
+                            <div style="background-color: var(--color-secondary-light); width: 100%; height: 200px;">
+
+                            </div>
+
+                        </div>
+                        
+                           
+                    </div>
+                </details>
+                <details class="aba" name="tabs">
+                    <summary class="obo" data-tab-order="5">Corpo Docente</summary>
+                    <div>
+                        <div style="display: flex; margin-top: 20px; gap: 10px;">
+                            <div class="campo">
+                                <label for="ano">Relatório a imprimir</label>
+                                <select id="ano" style="width: 100%;">
+                                    <option></option>
+                                    <option selected>Ficha(s) de Disciplina(s)</option>
+                                </select>
+                            </div>
+                            <button style="width: 60px;">Imprimir</button>
+                        </div>
+                        <p style="margin-top: 20px; margin-bottom: 20px;"><b>Corpo Docente</b></p>
+                        
+                        <table class="ficha2" style="margin-top: 20px;">
+                            <thead>
+                                <tr>
+                                    <th>Docente</th>
+                                    <th>Centro</th>
+                                    <th>Função</th>
+                                    <th>eMail</th>
+                                    <th>extensão</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Anonimo</td>
+                                    <td>Escola Superior de Tecnologias</td>
+                                    <td>Ensino teórico-prático</td>
+                                    <td>anonimo@staff.uma.pt</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Anonima</td>
+                                    <td>Faculdade de Ciências</td>
+                                    <td>Ensino teórico-prático</td>
+                                    <td>anonima@staff.uma.pt</td>
+                                    <td>1234</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Anonimo</td>
+                                    <td>Escola Superior de Gestão</td>
+                                    <td>Regência</td>
+                                    <td>anonimo@staff.uma.pt</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Anonimo</td>
+                                    <td>Escola Superior de Gestão</td>
+                                    <td>Responsável pelas Pautas</td>
+                                    <td>anonimo@staff.uma.pt</td>
+                                    <td></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+
+                    </div>
+                </details>
+                <details class="aba" name="tabs">
+                    <summary class="obo" data-tab-order="6">Documentos</summary>
+                    <div>
+                        <div style="display: flex; margin-top: 20px; gap: 10px;">
+                            <div class="campo">
+                                <label for="ano">Relatório a imprimir</label>
+                                <select id="ano" style="width: 100%;">
+                                    <option></option>
+                                    <option selected>Ficha(s) de Disciplina(s)</option>
+                                </select>
+                            </div>
+                            <button style="width: 60px;">Imprimir</button>
+                        </div>
+                        <div style="display: flex; margin-top: 20px; gap: 10px;">
+                            <div class="campo">
+                                <label for="ano">Filtrar por Categoria</label>
+                                <select id="ano" style="width: 100%;">
+                                    <option></option>
+                                    <option>Sebentas</option>
+                                    <option>Artigos</option>
+                                </select>
+                            </div>
+                            <button style="width: 145px;">Filtrar Lista</button>
+                        </div>
+                        <table class="ficha3" style="margin-top: 20px;">
+                            <thead>
+                                <tr>
+                                    <th>Ficheiro</th>
+                                    <th>Categoria</th>
+                                    <th>Data</th>
+                                    <th>Inserido por</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ficheiro A</td>
+                                    <td>Sebentas</td>
+                                    <td>2025-10-10</td>
+                                    <td>anonimo</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Ficheiro B</td>
+                                    <td>Exercicios</td>
+                                    <td>2025-10-17</td>
+                                    <td>anonimo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                               
+                             
+                    </div>
+                </details>
+            </div>
+                
+                
+            </div>
+
+
+          
+        </main>
+
+        <footer>
+            <div class="text">
+                <p><b>&copy; Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informaticas - <a id="prot" href="#">Proteção de Dados e Termos de Utilização</a></b></p>
+                <p>Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+            </div>
+            <div class="images">
+                <img class="img_footer" src="/imagens/posi-seeklogo.png" alt="POSI Logo">
+                <img class="img_footer" src="/imagens/Flag_of_Europe.svg.png" alt="Bandeira da União Europeia">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

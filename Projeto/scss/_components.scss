@@ -1,0 +1,889 @@
+//////////////////////////
+/// HEADER
+header h1{
+    color: #fff;
+}
+.user_photo{
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.logo{
+    height: 5rem;
+    width: 12rem;
+}
+//////////////////////
+/// login
+input:user-valid {
+  border: 2px solid green;
+  background-color: white;
+  color: green;
+}
+
+input:user-invalid {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+}
+
+
+
+//////////////////////////
+/// TOP BAR
+.navbtn{
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    
+    font-size: 1.35rem;
+    
+    &:hover{
+        background-color: var(--color-secondary-dark);
+    }
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+////////////////////////
+/// ANIMAÇÃO PULSATE CRITERIO DE AVALIAÇÃO HEADER CSS TRANSITION BUTAO
+a:hover{
+    background-color: var(--color-secondary-dark);
+    animation: pulsate 1s infinite;
+}
+@keyframes pulsate{
+    0%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+    50%{
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-secondary-light);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 1.15rem;
+}
+
+.dropdown{
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+/* retiro a animação pois por alguma razao em vez de dar classe para o "a" da nav bar eu alterei o "a" 
+e agora sao muitos a´s para ir por classe por isso achei mais facil alterar os a´s seguintes*/
+#prot{
+    text-decoration: underline;
+    color: var(--color-primary);
+    &:hover{
+        background-color: inherit;
+        animation: none;
+    }
+}
+
+/* pequenas classes utilizadas em varias paginas, que alteram pequeas coisas, como margem, cor, tamanho de texto*/
+.hiper{
+    color:var(--color-primary);
+    text-decoration: underline;
+}
+
+.alerta{
+    color: var(--color-primary);
+    font-size: medium;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.blue{
+    color: var(--color-primary);
+}
+
+.cinzaescuro{
+    color: var(--color-secondary-dark);
+}
+
+.sobrelinha{
+    text-decoration: underline;
+}
+
+.inblock{
+    display: inline-block;
+}
+
+.justcenter{
+    justify-self: center;
+}
+
+.flexacenter{
+    display: flex;
+    align-items: center;
+}
+
+.green{
+    color: rgb(3, 161, 3); 
+    font-size: medium;
+}
+
+.ml10{
+    margin-left: 10px;
+}
+
+.mr10{
+    margin-right: 10px;
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.mt15{
+    margin-top: 15px;
+}
+
+.mt25{
+    margin-top: 25px;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+
+.mb25{
+    margin-bottom: 15px;
+}
+
+.jscenter{
+    justify-self: center;
+}
+
+.flexcolum{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexjcenter{
+    display: flex;
+    justify-content: center;
+}
+
+/* retiro a animação pois por alguma razao em vez de dar classe para o "a" da nav bar eu alterei o "a" 
+e agora sao muitos a´s para ir por classe por isso achei mais facil alterar os a´s seguintes*/
+/* adiciono o [ e o ] antes e depois do texto que tem esta classe usando o before e after*/
+.top_top{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: underline;
+    color: var(--color-primary);
+    &:hover{
+        background-color: inherit;
+        animation: none;
+    }
+    &::before{
+        content: "[ ";
+    }
+    &::after{
+        content: " ]";
+    }
+}
+
+//////////////////////////////////
+/// Componentes geral-dados pessoais
+
+.name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color-primary); 
+}
+
+.label {
+    font-weight: bold;
+    color: black;
+    text-align: right; 
+}
+
+.value {
+    color: var(--color-secondary-dark);
+    border-bottom: 1px solid; 
+    padding-bottom: 5px;
+}
+
+#aluno{
+    font-size: medium;
+    color:var(--color-secondary-dark);
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.adress{
+    font-size: medium;
+    color: black;
+    padding: 10px;
+}
+
+/////////////////////////////////////
+/// componentes geral- privacidade
+
+.dropdown-click{
+    background-color: white;
+    width: 800px;
+    font-size: 1.15rem;
+    
+}
+
+.butao-privacidade{
+    width: 150px; 
+    height:35px; 
+    align-self: end; 
+    margin-right: 10px; 
+    background-color: var(--color-primary); 
+    color: white; 
+    border: none; 
+    border-radius: 8px;
+}
+
+/////////////////////////////////
+/// componentes geral-ajuda
+.texto-ajuda{
+    display: grid;
+    grid-template-columns: auto, 1fr;
+}
+
+.texto-ajuda-direita{
+    width: 10px;
+    grid-column: 1/ 2;
+    justify-self: start;
+    align-self: center;
+}
+
+.texto-ajuda-esquerda{
+    grid-column: 2/ 3;
+    
+}
+
+.texto-area-mensagem{
+    width: 100%;
+    height: 70px;
+
+}
+
+#butaoajuda{
+    width: 70%;
+}
+/////////////////////////////////
+/// componentes servicos-pagamentos
+
+.linha {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.campo label {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.campo select {
+  width: 140px;
+  padding: 3px;
+}
+
+.flexjend{
+    display: flex;
+    justify-content: end;
+}
+
+#butaopaga{
+    width: 27%;
+}
+
+.flex{
+    display: flex;
+}
+//////////////////////////////////
+/// componentes servicos-inscricoes
+
+.campo1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.campo1 label {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.campo1 select {
+  width: 100%;
+  padding: 3px;
+  height: 50px;
+}
+
+/////////////////////////////////
+/// componentes servicos-requerimentos
+
+
+/* na classe grid usada para "tabs" eu ponho a repetir 6 vezes as colunas pois o codigo é reutilizado varias vezes e a vez com mais tabs é 6
+para nao ter que repetir a escrita n css, ou seja para poder reutilizar esta class para as tabs todas eu coloquei o numero de colunas que o 
+a maior "grid" de tabs utiliza*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+    grid-template-rows: auto 1fr;
+    background-color: white;
+    width: 100%;
+    height: 85vh;
+}
+.aba{
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 2;
+    border-bottom: 1px solid lightgray;
+}
+/* cria uma variavel --tab-order que procura um atributo no html neste caso "data-tab-order" e 
+converte esse atributo num numero inteiro, caso contrario era string, é utilizado para colocar cada "tab" na coluna correcta
+ou seja na ordem que queremos, damos esse atributo no html*/
+.obo{
+    --tab-order: attr(data-tab-order type(<integer>));
+    grid-column: var(--tab-order) / span 1;
+    grid-row: 1;
+    display: grid;
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    z-index: 1;
+}
+/* quando a "tab" esta aberto o seguinte acontece*/
+.aba[open] :is(summary){
+    font-weight: bold;
+    pointer-events: none;
+    border: 1px solid lightgray;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: none;
+}
+.aba::details-content{
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding: 1rem;
+}
+.aba:not([open])::details-content{
+    display: none;
+}
+
+///////////////////////////////////////////
+/// componentes concursos-candidaturas
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    table-layout: fixed;
+}
+
+.tabela th,
+.tabela td {
+    border: 1px solid #999;
+    padding: 6px 8px;
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.tabela th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+
+.tabela th:nth-child(3),
+.tabela td:nth-child(3) {
+    max-width: 250px;
+}
+
+.tabela th:nth-child(6),
+.tabela td:nth-child(6) {
+    max-width: 200px;
+}
+
+.tabela th:empty,
+.tabela td:empty {
+    padding: 0;
+}
+
+.tabela th:nth-child(1),
+.tabela td:nth-child(1),
+.tabela th:nth-child(2),
+.tabela td:nth-child(2) {
+    width: 40px;
+}
+
+.tabela th:nth-child(4),
+.tabela td:nth-child(4),
+.tabela th:nth-child(5),
+.tabela td:nth-child(5){
+    width: 80px;
+}
+
+.tabela th:nth-child(7),
+.tabela td:nth-child(7),
+.tabela th:nth-child(9),
+.tabela td:nth-child(9) {
+    width: 60px;
+}
+
+////////////////////////////////////
+/// componentes aula-calendario
+.calendario {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.calendario thead th {
+    height: 50px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+
+.calendario th,
+.calendario td {
+    border: 1px solid #999;
+    padding: 6px;
+    vertical-align: top;
+}
+
+.calendario tbody tr {
+    height: 50px;
+}
+
+/* componentes ficha */
+
+.ficha {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ficha thead th {
+    height: 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+
+.ficha th,
+.ficha td {
+    border: 1px solid #999;
+    padding: 6px;
+    vertical-align: top;
+}
+
+.ficha tbody tr {
+    height: 20px;
+}
+
+
+.ficha th:nth-child(1),
+.ficha td:nth-child(1),
+.ficha th:nth-child(5),
+.ficha td:nth-child(5) {
+    width: 55px;
+}
+
+.ficha th:nth-child(2),
+.ficha td:nth-child(2),
+.ficha th:nth-child(3),
+.ficha td:nth-child(3),
+.ficha th:nth-child(4),
+.ficha td:nth-child(4){
+    max-width: 200px;
+}
+
+.ficha th:nth-child(6),
+.ficha td:nth-child(6){
+    width: 30px;
+}
+.ficha th:nth-child(7),
+.ficha td:nth-child(7),
+.ficha th:nth-child(8),
+.ficha td:nth-child(8) {
+    width: 40px;
+}
+
+.ficha1 {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ficha1 thead th {
+    height: 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+
+.ficha1 th,
+.ficha1 td {
+    border: 1px solid #999;
+    padding: 6px;
+    vertical-align: top;
+}
+
+.ficha1 tbody tr {
+    height: 20px;
+}
+
+
+
+.ficha1 th:nth-child(2),
+.ficha1 td:nth-child(2),
+.ficha1 th:nth-child(3),
+.ficha1 td:nth-child(3){
+    max-width: 500px;
+}
+
+
+.ficha1 th:nth-child(1),
+.ficha1 td:nth-child(1),
+.ficha1 th:nth-child(4),
+.ficha1 td:nth-child(4) {
+    width: 100px;
+}
+
+.ficha2 {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ficha2 thead th {
+    height: 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+
+.ficha2 th,
+.ficha2 td {
+    border: 1px solid #999;
+    padding: 6px;
+    vertical-align: top;
+}
+
+.ficha2 tbody tr {
+    height: 20px;
+}
+
+
+.ficha2 th:nth-child(1),
+.ficha2 td:nth-child(1),
+.ficha2 th:nth-child(2),
+.ficha2 td:nth-child(2),
+.ficha2 th:nth-child(3),
+.ficha2 td:nth-child(3),
+.ficha2 th:nth-child(4),
+.ficha2 td:nth-child(4){
+    max-width: 500px;
+}
+
+
+.ficha2 th:nth-child(5),
+.ficha2 td:nth-child(5){
+    width: 50px;
+}
+
+.ficha3 {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ficha3 thead th {
+    height: 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+
+.ficha3 th,
+.ficha3 td {
+    border: 1px solid #999;
+    padding: 6px;
+    vertical-align: top;
+}
+
+.ficha3 tbody tr {
+    height: 20px;
+}
+
+.ficha3 th:nth-child(1),
+.ficha3 td:nth-child(1){
+    width: 600px;
+}
+
+.ficha3 th:nth-child(2),
+.ficha3 td:nth-child(2),
+.ficha3 th:nth-child(3),
+.ficha3 td:nth-child(3){
+    max-width: 500px;
+}
+
+
+.ficha3 th:nth-child(4),
+.ficha3 td:nth-child(4){
+    width: 80px;
+}
+
+/* componente curso- ficha curricular */
+
+.ficha3 {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.ficha3 thead th {
+    height: 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+
+.fichacurr th,
+.fichacurr td {
+    border: 1px solid #999;
+    padding: 6px;
+    vertical-align: top;
+}
+
+.fichacurr tbody tr {
+    height: 20px;
+}
+
+/* componente horario */
+
+.horario-container {
+    height: 100%;
+    padding: 10px;
+    background: #fff;
+}
+
+
+.horario {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+
+.horario thead th {
+    background: #f0f0f0;
+    text-align: center;
+    font-weight: bold;
+    height: 40px;
+}
+
+
+.horario th,
+.horario td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.horario tbody th {
+    background: #fafafa;
+    font-weight: normal;
+}
+
+
+.evento {
+    background: #e6f0ff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+/* componente historico matriculas*/
+
+
+.inscricoesdisc {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.inscricoesdisc thead th {
+    height: 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+
+.inscricoesdisc th,
+.inscricoesdisc td {
+    border: 1px solid #999;
+    padding: 6px;
+    vertical-align: top;
+}
+
+.inscricoesdisc tbody tr {
+    height: 20px;
+}
+
+.inscricoesdisc th:nth-child(1),
+.inscricoesdisc td:nth-child(1),
+.inscricoesdisc th:nth-child(7),
+.inscricoesdisc td:nth-child(7){
+    width: 100px;
+}
+
+.inscricoesdisc th:nth-child(2),
+.inscricoesdisc td:nth-child(2),
+.inscricoesdisc th:nth-child(6),
+.inscricoesdisc td:nth-child(6){
+    width: 150px;
+}
+
+
+.inscricoesdisc th:nth-child(3),
+.inscricoesdisc td:nth-child(3){
+    width: 300px;
+}
+
+/* componentes plano conclusao */
+
+.planoconcl {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.planoconcl thead th {
+    height: 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+
+.planoconcl th,
+.planoconcl td {
+    border: 1px solid #999;
+    padding: 6px;
+    vertical-align: top;
+}
+
+.planoconcl tbody tr {
+    height: 20px;
+}
+
+.planoconcl th:nth-child(1),
+.planoconcl td:nth-child(1),
+.planoconcl th:nth-child(4),
+.planoconcl td:nth-child(4),
+.planoconcl th:nth-child(5),
+.planoconcl td:nth-child(5){
+    width: 70px;
+}
+
+.planoconcl th:nth-child(2),
+.planoconcl td:nth-child(2){
+    max-width: 500px;
+}
+
+.planoconcl th:nth-child(3),
+.planoconcl td:nth-child(3){
+    width: 90px;
+}
+
+.planoconcl th:nth-child(6),
+.planoconcl td:nth-child(6){
+    width: 50px;
+}
+
+@media (max-width: 480px) {
+
+  /* HEADER */
+  header h1 {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 7rem;
+    height: auto;
+  }
+
+  .user_photo {
+    height: 3rem;
+    margin-right: 0;
+  }
+
+  /* TOP BAR */
+  .navbtn {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  a {
+    padding: 6px;
+  }
+
+
+}

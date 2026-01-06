@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>InfoAlunos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/imagens/logotipos_UMa_png-05.png" alt="uni logo" class="logo">
+            <h1>InfoAlunos - Serviço de Informação dos Alunos - Projeto</h1>
+            <img src="/imagens/images.png" alt="user photo" class="user_photo">       
+        </header>
+
+        <div class="navbar">
+            <div class="dropdown">
+                <a href="/inicio.html">
+                <button class="navbtn">Inicio</button>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Geral</button>
+                <div class="dropdown-content">
+                    <a href="/geral/processos.html">Processos</a>
+                    <a href="/geral/dadospessoais.html">Dados Pessoais</a>
+                    <a href="/geral/privacidade.html">Privacidade</a>
+                    <a href="/geral/ajuda.html">Ajuda</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Serviços</button>
+                <div class="dropdown-content">
+                    <a href="/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/servicos/matri_inscr.html">Matrículas/Inscrições</a>
+                    <a href="/servicos/inscr_turm.html">Inscrição em Turmas</a>
+                    <a href="/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/servicos/cartaouniv.html">Cartão Universitário</a>
+                    <a href="https://www.uma.pt/sobre/servico-apoio-estudantes/accao-social/?IDM=PT&ID0=1764771123&ID1=&ID2=0&ID3=709dbeeb9dd8aa0725256b8213d7542c&TPESQ=FRM_CONCURSOS_SUBMETERCANDIDATURA_EAGRFILTRA" target="_blank">SASUMa-Bolsas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Concursos</button>
+                <div class="dropdown-content">
+                    <a href="/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Avaliação</button>
+                <div class="dropdown-content">
+                    <a href="/avaliacao/pautas.html">Pautas</a>
+                    <a href="/avaliacao/recla_notas.html">Reclamação de Nota</a>
+                    <a href="/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/avaliacao/resul_inque.html">Resultados de Inquéritos</a>
+                    <a href="/avaliacao/inque_raides.html">Inquérito RAIDES</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Creditações</button>
+                <div class="dropdown-content">
+                    <a href="/creditacoes/listaprocessos.html">Lista de Processos</a>
+                    <a href="/creditacoes/novoprocesso.html">Novo Processo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Documentos</button>
+                <div class="dropdown-content">
+                    <a href="/documentos/academicos.html">Académicos</a>
+                    <a href="/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Aula</button>
+                <div class="dropdown-content">
+                    <a href="/aula/calendario.html">Calendário</a>
+                    <a href="/aula/sumarios.html">Sumários</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Disciplina</button>
+                <div class="dropdown-content">
+                    <a href="/disciplina/ficha.html">Ficha</a>
+                    <a href="/disciplina/programa.html">Programa</a>
+                    <a href="/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Curso</button>
+                <div class="dropdown-content">
+                    <a href="/curso/fichacurricular.html">Ficha Curricular</a>
+                    <a href="/curso/horarios.html">Horários</a>
+                    <a href="/curso/histo_matric_inscr.html">Histórico de Matrículas/Inscrições</a>
+                    <a href="/curso/histo_disc_apro.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/curso/trans_bolo.html">Transição para Bolonha</a>
+                    <a href="/curso/plan_concl.html">Plano de Conclusão</a>
+                    <a href="/curso/quadro_presc.html">Quadro de Prescrição</a>
+                    <a href="/curso/ativ_acad_aluno.html">Atividades Académicas do Aluno</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Instituição</button>
+                <div class="dropdown-content">
+                    <a href="/instituicao/estr_orga.html">Estrutura Orgânica</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/eleicoes/eleicoes.html">
+                <button class="navbtn">Eleições</button>
+                </a>
+            </div>
+        </div>
+        <!-- main contem 4 divs principais para separar quatro campos de informaçoes -->
+        <main class="main-geral-dadospessoais">
+            <!-- codigo do campo de informaçoes pessoais -->
+            <div class="nome">
+                <!--div separada para o titulo-->
+                <div class="titulo">
+                    <p class="blue">Nome e Informação Biográfica</p>
+                    <a class="sobrelinha" href="#">Alterar</a>
+                </div>
+                <!-- div para o nome e foto do aluno-->
+                <div class="cabecalho">
+                    <div>
+                    <img class="user_photo" src="/imagens/images.png" alt="foto de perfil">
+                    </div>
+                    <div class="user-info">
+                    <p class="name">ANONIMO</p>
+                    </div>
+                </div>
+                <!--div para o resto dos detalhes, os detalhes foram colocados dentro de divs,
+                a div com class detalhes, tem uma grid que separa as duas classes seguintes em duas colunas,
+                para a div com class label, o texto fica encostado a direira(por isso utilizei da div), 
+                e para a classe value ela tem uma border visiel em baixo que aje como linha de separação (por isso utilizei da div)-->
+                <div class="detalhes">
+                    <div class="label">Nome Completo</div>
+                    <div class="value">Anonimo</div>
+        
+                    <div class="label">Data de Nascimento</div>
+                    <div class="value">22-03-1998</div>
+
+                    <div class="label">Sexo</div>
+                    <div class="value">Masculino</div>
+
+                    <div class="label">Estado Civil</div>
+                    <div class="value">Solteiro</div>
+
+                    <div class="label">Naturalidade</div>
+                    <div class="value">Ilha da Madeira</div>
+
+                    <div class="label">Nacionalidade</div>
+                    <div class="value">Portugal</div>
+        
+                    <div class="label">Pai - Nome Completo</div>
+                    <div class="value">Anonimo</div>
+        
+                    <div class="label">Mãe - Nome Completo</div>
+                    <div class="value">Anonimo</div>
+                    <p id="aluno">ALUNO Nº9999999</p>
+                </div>
+
+            </div>
+
+            <!--Div para documentos de identificação, fica noutra posiçao div, separada-->
+            <div class="doc-ident">
+                <!--div para o titulo do conteudo-->
+                <div class="titulo">
+                    <p class="cinzaescuro">Documentos de Identificação</p>
+                    <a class="sobrelinha" href="#">Alterar</a>
+                </div>
+                <!--div para o conteudo-->
+                <div class="detalhes">
+                    <div class="label">Numero de Identificação Fiscal</div>
+                    <div class="value">############</div>
+        
+                    <div class="label">Número de Identificação Civil</div>
+                    <div class="value">############</div>
+
+                    <div class="label">Segurança Social (Caixa)</div>
+                    <div class="value">############</div>
+
+                </div>
+
+            </div>
+            <!--div para morada, fica noutra posição, div separada-->
+            <div class="morada">
+                <!--div para o titulo-->
+                <div class="titulo">
+                    <p class="cinzaescuro">Morada</p>
+                    <a class="sobrelinha" href="#">Alterar</a>
+                </div>
+                <!--div para o conteudo-->
+                <div class="adress">
+                    <p>Anonimo</p>
+                    <p>Rua das estantes amarelas, n333</p>
+                    <p>9000-333 Funchal</p>
+                    <p>Portugal</p>
+                </div>
+            </div>
+            <!--div para contactos, fico noutra posição, div separada-->
+            <div class="contactos">
+                <!--div para titulo, contem css diferente do conteudo-->
+                <div class="titulo">
+                    <p class="cinzaescuro">Contactos</p>
+                    <a class="sobrelinha" href="#">Alterar</a>
+                </div>
+                <!--div para conteudo-->
+                <div class="detalhes">
+                    <div class="label">Número de telefone</div>
+                    <div class="value">291291291</div>
+        
+                    <div class="label">Número de telemóvel</div>
+                    <div class="value">919191919</div>
+
+                    <div class="label">EMail Pessoal</div>
+                    <div class="value">anonimo@outlook.pt</div>
+
+                    <div class="label">Email Institucional</div>
+                    <div class="value">9999999@student.uma.pt</div>
+
+                </div>
+
+            </div>
+          
+        </main>
+
+        <footer>
+            <div class="text">
+                <p><b>&copy; Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informaticas - <a id="prot" href="#">Proteção de Dados e Termos de Utilização</a></b></p>
+                <p>Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+            </div>
+            <div class="images">
+                <img class="img_footer" src="/imagens/posi-seeklogo.png" alt="POSI Logo">
+                <img class="img_footer" src="/imagens/Flag_of_Europe.svg.png" alt="Bandeira da União Europeia">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

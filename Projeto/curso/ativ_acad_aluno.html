@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>InfoAlunos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/imagens/logotipos_UMa_png-05.png" alt="uni logo" class="logo">
+            <h1>InfoAlunos - Serviço de Informação dos Alunos - Projeto</h1>
+            <img src="/imagens/images.png" alt="user photo" class="user_photo">       
+        </header>
+
+        <div class="navbar">
+            <div class="dropdown">
+                <a href="/inicio.html">
+                <button class="navbtn">Inicio</button>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Geral</button>
+                <div class="dropdown-content">
+                    <a href="/geral/processos.html">Processos</a>
+                    <a href="/geral/dadospessoais.html">Dados Pessoais</a>
+                    <a href="/geral/privacidade.html">Privacidade</a>
+                    <a href="/geral/ajuda.html">Ajuda</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Serviços</button>
+                <div class="dropdown-content">
+                    <a href="/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/servicos/matri_inscr.html">Matrículas/Inscrições</a>
+                    <a href="/servicos/inscr_turm.html">Inscrição em Turmas</a>
+                    <a href="/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/servicos/cartaouniv.html">Cartão Universitário</a>
+                    <a href="https://www.uma.pt/sobre/servico-apoio-estudantes/accao-social/?IDM=PT&ID0=1764771123&ID1=&ID2=0&ID3=709dbeeb9dd8aa0725256b8213d7542c&TPESQ=FRM_CONCURSOS_SUBMETERCANDIDATURA_EAGRFILTRA" target="_blank">SASUMa-Bolsas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Concursos</button>
+                <div class="dropdown-content">
+                    <a href="/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Avaliação</button>
+                <div class="dropdown-content">
+                    <a href="/avaliacao/pautas.html">Pautas</a>
+                    <a href="/avaliacao/recla_notas.html">Reclamação de Nota</a>
+                    <a href="/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/avaliacao/resul_inque.html">Resultados de Inquéritos</a>
+                    <a href="/avaliacao/inque_raides.html">Inquérito RAIDES</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Creditações</button>
+                <div class="dropdown-content">
+                    <a href="/creditacoes/listaprocessos.html">Lista de Processos</a>
+                    <a href="/creditacoes/novoprocesso.html">Novo Processo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Documentos</button>
+                <div class="dropdown-content">
+                    <a href="/documentos/academicos.html">Académicos</a>
+                    <a href="/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Aula</button>
+                <div class="dropdown-content">
+                    <a href="/aula/calendario.html">Calendário</a>
+                    <a href="/aula/sumarios.html">Sumários</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Disciplina</button>
+                <div class="dropdown-content">
+                    <a href="/disciplina/ficha.html">Ficha</a>
+                    <a href="/disciplina/programa.html">Programa</a>
+                    <a href="/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Curso</button>
+                <div class="dropdown-content">
+                    <a href="/curso/fichacurricular.html">Ficha Curricular</a>
+                    <a href="/curso/horarios.html">Horários</a>
+                    <a href="/curso/histo_matric_inscr.html">Histórico de Matrículas/Inscrições</a>
+                    <a href="/curso/histo_disc_apro.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/curso/trans_bolo.html">Transição para Bolonha</a>
+                    <a href="/curso/plan_concl.html">Plano de Conclusão</a>
+                    <a href="/curso/quadro_presc.html">Quadro de Prescrição</a>
+                    <a href="/curso/ativ_acad_aluno.html">Atividades Académicas do Aluno</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Instituição</button>
+                <div class="dropdown-content">
+                    <a href="/instituicao/estr_orga.html">Estrutura Orgânica</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/eleicoes/eleicoes.html">
+                <button class="navbtn">Eleições</button>
+                </a>
+            </div>
+        </div>
+
+        <main class="main-inquerito-raides">
+            <div style="background-color: white; padding: 10px;">
+                <p><b>Editar Actividade Académicas do Aluno</b></p>
+                <p style="margin-top: 10px;">Nesta área o aluno deve introduzir, caso existam, as actividades académicas (no máximo de cinco, de acordo com a Recomendação nº4/2008 do CRUP) em que esteve envolvido de modo a que possam ser incluídas no Suplemento ao Diploma (apenas para os cursos adaptados a Bolonha). As actividades são descritas em Português e Inglês devendo ser entregues, posteriormente, ao Director de Curso os documentos comprovativos das mesmas.</p>
+                <p style="margin-top: 10px;">No Sidoc (https://sidoc.uma.pt) o Director de Curso, a partir dos documentos entregues, confirma as actividades introduzidas pelo aluno bloqueando-as, remetendo em seguida os documentos para o Sector Académico, onde serão anexados ao respectivo processo.</p>
+                <p style="margin-top: 10px;">Posteriormente o Sector Académico, antes de emitir o Suplemento ao Diploma, valida as actividades confirmadas pelo Director de Curso.</p>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 1</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 2</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 3</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 4</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 5</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 6</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 7</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 8</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 9</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="background-color: white; padding: 10px; margin-top: 10px;">
+                <p><b>Actividade 10</b></p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div style="grid-column: 1/ 2;">
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Tipo de Actividade</label>
+                                <select id="ano" style="width: 300px;">
+                                    <option></option>
+                                    <option>Actividades Desportivas</option>
+                                    <option>Cargo Académico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local</label>
+                                <textarea style="width: 375px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição</label>
+                                <textarea style="width: 350px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="grid-column: 2/ 3;">
+                        <div style="display: flex; gap: 5px;">
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Inicio</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="ano">Data Fim</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Local (EN)</label>
+                                <textarea style="width: 425px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="campo">
+                                <label for="ano">Descrição (EN)</label>
+                                <textarea style="width: 400px;"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="display: flex; justify-content: end; margin: 10px;">
+                <button style="width: 200px; margin-bottom: 20px;">Guardar Actividades</button>
+
+            </div>
+          
+        </main>
+
+        <footer>
+            <div class="text">
+                <p><b>&copy; Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informaticas - <a id="prot" href="#">Proteção de Dados e Termos de Utilização</a></b></p>
+                <p>Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+            </div>
+            <div class="images">
+                <img class="img_footer" src="/imagens/posi-seeklogo.png" alt="POSI Logo">
+                <img class="img_footer" src="/imagens/Flag_of_Europe.svg.png" alt="Bandeira da União Europeia">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

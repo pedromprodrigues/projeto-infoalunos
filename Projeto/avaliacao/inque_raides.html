@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>InfoAlunos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/imagens/logotipos_UMa_png-05.png" alt="uni logo" class="logo">
+            <h1>InfoAlunos - Serviço de Informação dos Alunos - Projeto</h1>
+            <img src="/imagens/images.png" alt="user photo" class="user_photo">       
+        </header>
+
+        <div class="navbar">
+            <div class="dropdown">
+                <a href="/inicio.html">
+                <button class="navbtn">Inicio</button>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Geral</button>
+                <div class="dropdown-content">
+                    <a href="/geral/processos.html">Processos</a>
+                    <a href="/geral/dadospessoais.html">Dados Pessoais</a>
+                    <a href="/geral/privacidade.html">Privacidade</a>
+                    <a href="/geral/ajuda.html">Ajuda</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Serviços</button>
+                <div class="dropdown-content">
+                    <a href="/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/servicos/matri_inscr.html">Matrículas/Inscrições</a>
+                    <a href="/servicos/inscr_turm.html">Inscrição em Turmas</a>
+                    <a href="/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/servicos/cartaouniv.html">Cartão Universitário</a>
+                    <a href="https://www.uma.pt/sobre/servico-apoio-estudantes/accao-social/?IDM=PT&ID0=1764771123&ID1=&ID2=0&ID3=709dbeeb9dd8aa0725256b8213d7542c&TPESQ=FRM_CONCURSOS_SUBMETERCANDIDATURA_EAGRFILTRA" target="_blank">SASUMa-Bolsas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Concursos</button>
+                <div class="dropdown-content">
+                    <a href="/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Avaliação</button>
+                <div class="dropdown-content">
+                    <a href="/avaliacao/pautas.html">Pautas</a>
+                    <a href="/avaliacao/recla_notas.html">Reclamação de Nota</a>
+                    <a href="/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/avaliacao/resul_inque.html">Resultados de Inquéritos</a>
+                    <a href="/avaliacao/inque_raides.html">Inquérito RAIDES</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Creditações</button>
+                <div class="dropdown-content">
+                    <a href="/creditacoes/listaprocessos.html">Lista de Processos</a>
+                    <a href="/creditacoes/novoprocesso.html">Novo Processo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Documentos</button>
+                <div class="dropdown-content">
+                    <a href="/documentos/academicos.html">Académicos</a>
+                    <a href="/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Aula</button>
+                <div class="dropdown-content">
+                    <a href="/aula/calendario.html">Calendário</a>
+                    <a href="/aula/sumarios.html">Sumários</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Disciplina</button>
+                <div class="dropdown-content">
+                    <a href="/disciplina/ficha.html">Ficha</a>
+                    <a href="/disciplina/programa.html">Programa</a>
+                    <a href="/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Curso</button>
+                <div class="dropdown-content">
+                    <a href="/curso/fichacurricular.html">Ficha Curricular</a>
+                    <a href="/curso/horarios.html">Horários</a>
+                    <a href="/curso/histo_matric_inscr.html">Histórico de Matrículas/Inscrições</a>
+                    <a href="/curso/histo_disc_apro.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/curso/trans_bolo.html">Transição para Bolonha</a>
+                    <a href="/curso/plan_concl.html">Plano de Conclusão</a>
+                    <a href="/curso/quadro_presc.html">Quadro de Prescrição</a>
+                    <a href="/curso/ativ_acad_aluno.html">Atividades Académicas do Aluno</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="navbtn">Instituição</button>
+                <div class="dropdown-content">
+                    <a href="/instituicao/estr_orga.html">Estrutura Orgânica</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/eleicoes/eleicoes.html">
+                <button class="navbtn">Eleições</button>
+                </a>
+            </div>
+        </div>
+
+        <main class="main-inquerito-raides">
+            <div style="background-color: white; padding: 10px; border-radius: 8px;">
+                <select style="width: 100%;">
+                    <option></option> 
+                    <option selected>2025/26 - CTeSP - Tecnologias e Programação de Sistemas de Informação</option>    
+                </select>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                <h1 style="color: var(--color-primary);">Avaliação / Inquérito RAIDES</h1>
+                <h3 style="font-weight: lighter; margin: 20px;">Este inquérito destina-se à recolha de dados, de acordo com as regras estabelecidas pela Direção-Geral de Estatísticas da Educação e Ciência, sendo de preenchimento obrigatório.</h3>
+            </div>
+
+            <div style="background-color: white; border-radius: 8px; padding: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: auto;">
+                    <h2 style="color: var(--color-primary); grid-column: 1/3; grid-row: 1/2; margin-bottom: 20px;">Informações sobre o Ingresso</h2>
+                    <p style="grid-column: 1/2; grid-row: 2/3;"><b>Ano Letivo de Ingresso:</b> 2025/26</p>
+                    <p style="grid-column: 2/3; grid-row: 2/3;"><b>Forma de Ingresso:</b> Titulares de curso de ensino secundário ou de habilitaçoes legalmente equivalente(para acesso ao curso técnico superior profissional)</p>
+                </div>
+                <div>
+                    <h2 style="color: var(--color-primary); margin-bottom: 20px; margin-top: 40px;">Informações sobre o Ingresso</h2>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual o nível de escolaridade mais elevado que possui?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option selected>Ensino secundário (12º ano de escolaridade completo)</option>
+                                <option>Ensino superior - Bacharelato ou equivalente</option> 
+                                <option>Ensino superior - Licenciatura ou equivalente</option>     
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Em que país completou essa escolaridade?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option selected>Portugal</option>
+                                <option>Inglaterra</option> 
+                                <option>Alemanha</option>     
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Em que ano civil concluiu esse nível de escolaridade?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option selected>2013</option>
+                                <option>2014</option> 
+                                <option>2015</option>     
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual o tipo de estabelicimento (público ou privado) frequentado no secundário?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option selected>Público</option>
+                                <option>Privado</option>      
+                            </select>
+                        </div>
+                    </div>
+                    <h2 style="color: var(--color-primary); margin-bottom: 20px; margin-top: 40px;">Informações relativas aos pais do aluno</h2>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual habilitação académica do seu pai?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option selected>1 Ciclo do ensino básico ou equivalente(4º Ano Escolaridade)</option>
+                                <option>Ensino Médio</option>     
+                                <option>Licenciatura</option>   
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual habilitação académica da sua mãe?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option>1 Ciclo do ensino básico ou equivalente(4º Ano Escolaridade)</option>
+                                <option>Ensino Médio</option>     
+                                <option selected>Licenciatura</option>   
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual a situação profissional do seu pai?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option selected>Trabalhador por Conta de Outrem</option>
+                                <option>Reformado</option>     
+                                <option>Trabalhador por Conta Própria como Isolado</option>   
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual a situação profissional da sua mãe?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option>Trabalhador por Conta de Outrem</option>
+                                <option>Reformado</option>     
+                                <option selected>Trabalhador por Conta Própria como Isolado</option>   
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual a profissão do seu pai?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option selected>Condutores de veículos e operadores de equipamentos</option>
+                                <option>Advogado</option>     
+                                <option>Não Sabe / Não se Aplica</option>   
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual a profissão da sua mãe?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option>Condutores de veículos e operadores de equipamentos</option>
+                                <option>Advogado</option>     
+                                <option selected>Não Sabe / Não se Aplica</option>   
+                            </select>
+                        </div>
+                    </div>
+                    <h2 style="color: var(--color-primary); margin-bottom: 20px; margin-top: 40px;">Informações relativas ao aluno</h2>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual a sua situação profissional?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option>Estudante</option>
+                                <option>Reformado</option>     
+                                <option selected>Desempregado</option>   
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Qual a sua profissão atual (ou anterior, em caso de reforma ou desemprego)?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option>Professores</option>
+                                <option>Vendedores</option>     
+                                <option selected>Trabalhadores qualificados em eletricidade</option>   
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Em que país concluiu o ensino secundário?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option> 
+                                <option>Inglaterra</option>
+                                <option>Alemanha</option>     
+                                <option selected>Portugal</option>   
+                            </select>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="campo">
+                            <label for="ano">Está deslocado da dua residência familiar?</label>
+                            <select id="ano" style="width: 100%;">
+                                <option></option>
+                                <option selected>Não</option>     
+                                <option>Sim</option>   
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button style="margin-top: 40px; margin-bottom: 40px; width: 100%; height: 30px;">Submeter inquérito</button>
+          
+        </main>
+
+        <footer>
+            <div class="text">
+                <p><b>&copy; Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informaticas - <a id="prot" href="#">Proteção de Dados e Termos de Utilização</a></b></p>
+                <p>Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+            </div>
+            <div class="images">
+                <img class="img_footer" src="/imagens/posi-seeklogo.png" alt="POSI Logo">
+                <img class="img_footer" src="/imagens/Flag_of_Europe.svg.png" alt="Bandeira da União Europeia">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
